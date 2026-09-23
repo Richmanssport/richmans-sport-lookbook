@@ -144,7 +144,8 @@ span.sw{cursor:default}
 .art-room figure{margin:0;display:flex;flex-direction:column;gap:10px}
 .art-room img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .art-room figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.art-more{display:flex;justify-content:center;margin-top:clamp(36px,5vw,56px)}
+.art-more{display:flex;justify-content:flex-start;grid-column:1;grid-row:3}
+.sec-head .art-more + .lede{grid-row:2}
 .art-more a{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--ink);padding:16px 26px;font-family:var(--display);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;transition:background .2s ease,color .2s ease}
 .art-more a:hover{background:var(--ink);color:var(--on-accent)}
 
@@ -191,6 +192,7 @@ span.sw{cursor:default}
   .hat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .art-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .sec-head{grid-template-columns:minmax(0,1fr)}
+  .art-more,.sec-head .art-more + .lede{grid-row:auto}
 }
 @media (max-width:640px){
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -480,6 +482,7 @@ span.sw{cursor:default}
     <div class="sec-head">
       <p class="eyebrow">Golf wall art · top sellers</p>
       <h2>The Art</h2>
+      <div class="art-more"><a href="https://richmanssport.com/collections/golf-wall-art-prints-posters" target="_blank" rel="noopener">See the full art gallery <span aria-hidden="true">→</span></a></div>
       <p class="lede">Our original golf prints. Available as prints and framed pieces, and built to dress a fixture, a clubhouse or a man cave.</p>
     </div>
     <div class="art-room">
@@ -496,7 +499,6 @@ span.sw{cursor:default}
       <figure class="art"><div class="frame"><img data-k="a_07" alt="The Green print"></div><h4>The Green</h4><span class="sz">18×24 / 24×36 · from $84</span></figure>
       <figure class="art"><div class="frame"><img data-k="a_08" alt="Floral print"></div><h4>Floral</h4><span class="sz">24×36 · print or framed · from $100</span></figure>
     </div>
-    <div class="art-more"><a href="https://richmanssport.com/collections/golf-wall-art-prints-posters" target="_blank" rel="noopener">See the full art gallery <span aria-hidden="true">→</span></a></div>
   </div>
 </section>
 
